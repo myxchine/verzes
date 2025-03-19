@@ -82,7 +82,6 @@ button {
     #ffffff 50%
   );
   background-size: 200% 100%;
-  animation: gradient 15s ease infinite;
 }
 
 .top-to-bottom-gradient {
@@ -94,7 +93,15 @@ button {
     #ffffff 100%
   );
   background-size: 200% 100%;
-  animation: gradient 15s ease infinite;
+}
+
+.top-gradient {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff00 100%
+  );
+  background-size: 200% 100%;
 }
 
 select {
