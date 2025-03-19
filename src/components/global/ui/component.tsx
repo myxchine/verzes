@@ -6,6 +6,7 @@ export default function Component({
   small,
   padding,
   centeredmobile,
+  centereddesktop,
 }: Readonly<{
   children: React.ReactNode;
   centered?: boolean;
@@ -14,6 +15,7 @@ export default function Component({
   small?: boolean;
   padding?: boolean;
   centeredmobile?: boolean;
+  centereddesktop?: boolean;
 }>) {
   return (
     <div
@@ -23,6 +25,11 @@ export default function Component({
       ${padding ? "my-6 md:my-12" : null}
       ${
         centeredmobile
+          ? "items-center text-center justify-center mx-auto md:mx-0 md:text-left md:items-start md:justify-start"
+          : ""
+      }
+      ${
+        centereddesktop
           ? "items-center text-center justify-center mx-auto md:mx-0 md:text-left md:items-start md:justify-start"
           : ""
       }
