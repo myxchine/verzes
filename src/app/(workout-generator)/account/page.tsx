@@ -1,6 +1,5 @@
 import SignOut from "./signout";
 import { redirect } from "next/navigation";
-import { UserIcon } from "@/components/global/icons";
 import Link from "next/link";
 import { getworkoutsByuser } from "@/server/db/utils";
 import { Loading } from "@/components/global/loading";
@@ -42,7 +41,7 @@ async function Account() {
       <div className="flex flex-col gap-4 w-full">
         <h2 className="text-2xl font-bold">Your Workouts</h2>
         <Suspense fallback={<WorkoutListSkeleton numberOfWorkouts={10} />}>
-          <YourWorkouts session={session} h3/>
+          <YourWorkouts session={session} />
         </Suspense>
       </div>
     </div>
@@ -62,5 +61,5 @@ async function YourWorkouts({
       </p>
     );
   }
-  return <WorkoutList workouts={workouts} />;
+  return <WorkoutList workouts={workouts} h3 />;
 }

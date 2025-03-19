@@ -15,7 +15,7 @@ export default async function WorkoutList({
           key={workout.id}
           className="flex flex-col gap-2 w-full"
         >
-          {h3 ? (
+          {!h3 ? (
             <h2 className="text-lg font-semibold tracking-tight">
               {workout.workoutJson.name}
             </h2>
