@@ -15,7 +15,7 @@ export default function Home() {
           <div className="flex flex-row gap-2 items-center justify-center">
             <Link
               href="/workout-generator"
-              className="bg-black text-sm md:text-base text-background rounded-full px-6 py-2 hover:bg-black/80"
+              className="bg-black/5 text-sm md:text-base  rounded-full px-6 py-2 hover:bg-black/10"
             >
               Workout Generator {"->"}
             </Link>
@@ -28,13 +28,13 @@ export default function Home() {
         width={1200}
         height={400}
         priority
-        className="w-full object-cover -mt-18 md:-mt-12 max-w-7xl mx-auto aspect-[4/3] md:aspect-auto mix-blend-luminosity brightness-105 greyscale-0"
+        className="w-full object-cover -mt-12 md:-mt-12 max-w-7xl mx-auto aspect-[4/3] md:aspect-auto mix-blend-luminosity brightness-105 greyscale-0 opacity-100"
       />
       <Row>
         <Component centered>
           <h2>Health & Fitness Articles</h2>
 
-          <p>Coming soon...</p>
+          <p className="px-6 py-2 bg-black/5 rounded-full w-fit mx-auto">Coming soon...</p>
         </Component>
         <Component small centered>
           <h2>Workout Generator</h2>

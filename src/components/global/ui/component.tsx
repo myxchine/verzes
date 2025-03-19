@@ -20,7 +20,7 @@ export default function Component({
       className={`flex flex-col gap-3 md:gap-4   w-full     ${
         centered ? "items-center text-center justify-center mx-auto" : ""
       } ${small ? "max-w-2xl " : null}
-      ${padding ? "my-12 md:my-16" : null}
+      ${padding ? "my-6 md:my-12" : null}
       ${
         centeredmobile
           ? "items-center text-center justify-center mx-auto md:mx-0 md:text-left md:items-start md:justify-start"
