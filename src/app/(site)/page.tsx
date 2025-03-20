@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Section
         full
-        className="relative -mt-[var(--header-height-mobile)] md:-mt-[var(--header-height-desktop)]"
+        className="relative -mt-[var(--header-height-mobile)] md:-mt-[var(--header-height-desktop)] mb-6"
       >
         <Image
           src="/manthing.png"
@@ -39,17 +39,26 @@ export default function Home() {
       </Section>
       <Section>
         <Row>
-          <Component centered>
+          <Component small>
             <h2>Health & Fitness Articles</h2>
+            <p>
+              Curated content covering important topics related to exercise and
+              diet for overall health and fitness.
+            </p>
 
-            <p className="px-6 py-2 bg-black/5 rounded-full w-fit mx-auto">
+            <p className="px-6 py-2 bg-black/5 rounded-full w-fit">
               Coming soon...
             </p>
           </Component>
-          <Component small centered>
+        </Row>
+        <Row>
+          <Component small>
             <h2>Workout Generator</h2>
 
-            <p>Generate bespoke workouts with a simple prompt.</p>
+            <p>
+              Generate bespoke workouts tailored to your goal with a simple prompt. Don't like it?
+              Regenerate it!
+            </p>
             <Link
               href="/workout-generator"
               className="bg-black text-sm w-fit md:text-base text-background rounded-full px-6 py-2 hover:bg-black/80"

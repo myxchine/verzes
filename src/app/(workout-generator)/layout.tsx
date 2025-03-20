@@ -6,9 +6,10 @@ import Nav from "@/components/workout-generator/global/header/nav";
 export const metadata: Metadata = {
   title: {
     default: "Workout Generator",
-    template: "%s - Workout Generator",
+    template: "%s | Workout Generator",
   },
-  description: "Generate bespoke workouts with a simple prompt.",
+  description:
+    "Generate bespoke workouts tailored to your goal with a simple prompt. Don't like it? Regenerate it!",
   icons: {
     icon: "/favicon.ico",
   },
@@ -31,7 +32,6 @@ export default function RootLayout({
       >
         {children}
       </main>
-
     </SessionProvider>
   );
 }

@@ -19,7 +19,10 @@ const interSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Verzes | Curated Health & Fitness Platform",
+  title: {
+    default: "Verzes | Curated Health & Fitness Platform",
+    template: "%s | Verzes",
+  },
   description:
     "A hand-picked directory of health & fitness resources and custom tools.",
   icons: {

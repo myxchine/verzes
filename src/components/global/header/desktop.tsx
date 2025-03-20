@@ -11,12 +11,10 @@ export default function Menu() {
       </div>
 
       <Nav className="flex flex-row gap-8 w-fit justify-center items-center " />
-      <div className="w-1/6 justify-end items-center">
-        <div className="bg-black text-background rounded-full p-[6px] hover:bg-black/80 ml-auto w-fit">
-          <Link href="/workout-generator/workouts">
-            <SearchIcon className="size-4 cursor-pointer " />
-          </Link>
-        </div>
+      <div className="w-1/6 flex flex-col justify-center items-end ">
+        <Link href="/workout-generator/workouts" >
+          <SearchIcon className="size-5 cursor-pointer " />
+        </Link>
       </div>
     </div>
   );

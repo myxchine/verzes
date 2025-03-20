@@ -31,12 +31,10 @@ export default function MobileMenu() {
         <Buttons open={isOpen} setIsOpen={setIsOpen} />
         <Logo />
         <div className="w-1/3  flex-col justify-end items-end flex ">
-        <Link
-          href="/workout-generator/workouts"
-          className="bg-black text-background rounded-full p-[6px] hover:bg-black/80  ml-auto"
-        >
-          <SearchIcon className="size-4 cursor-pointer " />
-        </Link></div>
+          <Link href="/workout-generator/workouts" className="  ml-auto">
+            <SearchIcon className="size-5 cursor-pointer " />
+          </Link>
+        </div>
       </div>
     </div>
   );
