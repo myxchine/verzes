@@ -21,7 +21,7 @@ export default function Component({
     <div
       className={`flex flex-col gap-3 md:gap-4   w-full     ${
         centered ? "items-center text-center justify-center mx-auto" : ""
-      } ${small ? "max-w-2xl " : null}
+      } ${small ? "max-w-xl " : null}
       ${padding ? "my-6 md:my-12" : null}
       ${
         centeredmobile

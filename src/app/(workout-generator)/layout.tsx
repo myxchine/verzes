@@ -27,7 +27,7 @@ export default function RootLayout({
         <Nav className="flex flex-col gap-4 p-8 py-6 items-center justify-center px-4  mx-auto   w-full" />
       </div>
       <main
-        className="flex flex-col w-full max-w-[var(--site-width)] mx-auto"
+        className="flex flex-col w-full max-w-[var(--wg-width)] mx-auto"
         id="site-main"
       >
         {children}

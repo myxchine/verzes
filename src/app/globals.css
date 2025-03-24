@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
-/* #f6f2ee */
-
 :root {
   --background: #ffffff;
   --foreground: #000000;
   --header-height-mobile: 68.3px;
   --header-height-desktop: 92px;
-  --site-width: 50rem;
+  --site-width: 80rem;
+  --wg-width: 50rem;
   --header-height: 68.3px;
   --footer-height: 0px;
 }
@@ -96,12 +95,15 @@ button {
 }
 
 .top-gradient {
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #ffffff00 100%
-  );
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff00 100%);
   background-size: 200% 100%;
+}
+
+.exercise-card-gradient {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  mask-image: linear-gradient(to top, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 50%, transparent 100%);
 }
 
 select {
@@ -119,4 +121,49 @@ select {
   outline: none;
   width: 100%;
   box-sizing: border-box;
+}
+
+.exercise-content h2 {
+  @apply mt-8;
+}
+
+.exercise-content h3 {
+  @apply mt-8;
+}
+
+.exercise-content ul {
+  @apply list-disc flex flex-col gap-3;
+}
+
+.exercise-content ol {
+  @apply list-decimal flex flex-col gap-3;
+}
+
+.exercise-content li {
+  @apply ml-4;
+}
+
+.exercise-content a {
+  @apply underline;
+}
+
+.exercise-content img {
+  @apply w-full  object-cover border  max-w-xl rounded-lg;
+}
+
+table {
+  border-collapse: collapse; /* Ensures borders don't double up */
+  width: 100%; /* Optional: Makes the table span the full width of its container */
+  margin: 1em 0; /* Adds spacing above and below the table */
+}
+
+th,
+td {
+  border: 1px solid #ccc; /* Adds a solid border around table cells */
+  padding: 8px; /* Adds padding inside cells for better readability */
+  text-align: left; /* Aligns text to the left in cells */
+}
+
+th {
+  font-weight: bold; /* Makes headers bold */
 }

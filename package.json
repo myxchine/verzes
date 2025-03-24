@@ -15,20 +15,25 @@
     "drizzle-kit": "^0.30.5",
     "drizzle-orm": "^0.40.0",
     "framer-motion": "^12.4.10",
+    "gray-matter": "^4.0.3",
     "next": "15.2.0",
     "next-auth": "^4.24.11",
     "postgres": "^3.4.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-rehype": "^11.1.1",
     "server-only": "^0.0.1",
     "sonner": "^2.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

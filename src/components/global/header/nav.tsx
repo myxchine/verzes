@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Workout Generator", href: "/workout-generator" },
+  { name: "Exercises", href: "/exercises" },
 ];
 
 export default function Nav({ className }: { className?: string }) {

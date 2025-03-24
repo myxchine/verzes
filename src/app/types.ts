@@ -1,3 +1,19 @@
+interface Article {
+  slug: string;
+  title: string;
+  date: string;
+  image: string;
+  excerpt: string;
+  content: string;
+  references?: string[];
+}
+
+interface ExerciseArticle extends Article {
+  video: string;
+}
+
+// Workout Generator Types
+
 // 45 min workout: warmup, main, cooldown
 // main: 3 sets compound exercises (15min), 3 sets accessory exercises (15min)
 // compound sets: 8-12 reps of a weight that takes you to failure, atleast 2 min rest between sets
@@ -116,7 +132,6 @@ interface GeneratedExercise extends Exercise {
   duration?: number;
   rest?: number;
 }
-
 
 interface FocusAreaExercises {
   focusArea: string;
