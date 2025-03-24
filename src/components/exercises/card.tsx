@@ -22,7 +22,7 @@ export default function ExerciseCard({
         width={500}
         priority
         height={300}
-        className=" w-full object-cover aspect-[4/3] md:aspect-[13/9]"
+        className=" w-full object-cover aspect-[4/3] md:aspect-[13/9] opacity-90"
       />
       <div className="absolute bottom-0 left-0 right-0 w-full">
         <div className="p-4 pt-6 md:p-6 md:pt-8  relative z-10">
@@ -31,7 +31,7 @@ export default function ExerciseCard({
           ) : (
             <h2 className="line-clamp-2">{exercise.title}</h2>
           )}
-          <p className={"line-clamp-1 text-sm md:text-base"}>
+          <p className={"line-clamp-2 text-sm md:text-base"}>
             {exercise.excerpt}
           </p>
         </div>
