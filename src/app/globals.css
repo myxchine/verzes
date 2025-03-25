@@ -80,7 +80,6 @@ button {
     #ffffff00 40%,
     #ffffff 50%
   );
-  background-size: 200% 100%;
 }
 
 .top-to-bottom-gradient {
@@ -91,12 +90,14 @@ button {
     #ffffff00 80%,
     #ffffff 100%
   );
-  background-size: 200% 100%;
 }
 
 .top-gradient {
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff00 100%);
-  background-size: 200% 100%;
+}
+
+.header-gradient {
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff00 75%);
 }
 
 .exercise-card-gradient {

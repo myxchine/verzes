@@ -40,45 +40,47 @@ export default function Home() {
           </Row>
         </div>
       </Section>
-      <Section>
-        <Row>
-          <Component small>
-            <h2>Exercises</h2>
-            <p>
-              Learn about exercises, what they are useful for, how to perform
-              them correctly and more.
-            </p>
-          </Component>
-          <ExerciseList exercises={exercises} h3 />
-        </Row>
-        <Row>
-          <Component small>
-            <h2>Health & Fitness Articles</h2>
-            <p>
-              Curated content covering important topics related to exercise and
-              diet for overall health and fitness.
-            </p>
-            <p className="px-6 py-2 bg-black/5 rounded-full w-fit">
-              Coming soon...
-            </p>
-          </Component>
-        </Row>
-        <Row>
-          <Component small centered>
-            <h2>Workout Generator</h2>
-            <p>
-              Generate bespoke workouts tailored to your goal with a simple
-              prompt. Don't like it? Regenerate it!
-            </p>
-            <Link
-              href="/workout-generator"
-              className="bg-black text-sm w-fit md:text-base text-background rounded-full px-6 py-2 hover:bg-black/80"
-            >
-              Try for free {"->"}
-            </Link>
-          </Component>
-        </Row>
-      </Section>
+      <div className="w-full -mt-16 md:-mt-24 z-[10000] relative">
+        <Section>
+          <Row>
+            <Component small>
+              <h2>Exercises</h2>
+              <p>
+                Learn about exercises, what they are useful for, how to perform
+                them correctly and more.
+              </p>
+            </Component>
+            <ExerciseList exercises={exercises} h3 />
+          </Row>
+          <Row>
+            <Component small>
+              <h2>Health & Fitness Articles</h2>
+              <p>
+                Curated content covering important topics related to exercise
+                and diet for overall health and fitness.
+              </p>
+              <p className="px-6 py-2 bg-black/5 rounded-full w-fit">
+                Coming soon...
+              </p>
+            </Component>
+          </Row>
+          <Row>
+            <Component small centered>
+              <h2>Workout Generator</h2>
+              <p>
+                Generate bespoke workouts tailored to your goal with a simple
+                prompt. Don't like it? Regenerate it!
+              </p>
+              <Link
+                href="/workout-generator"
+                className="bg-black text-sm w-fit md:text-base text-background rounded-full px-6 py-2 hover:bg-black/80"
+              >
+                Try for free {"->"}
+              </Link>
+            </Component>
+          </Row>
+        </Section>
+      </div>
     </>
   );
 }

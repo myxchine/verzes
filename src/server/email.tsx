@@ -33,7 +33,7 @@ export default async function EmailContactForm(
     sender: { name: customerName, email: "noreply@couturer.com" },
     replyTo: { name: customerName, email: customerEmail },
     to: [{ name: "Michael", email: "michael.dozzantoz@gmail.com" }],
-    subject: `Doctor Grilo contact form submission by ${customerName}`,
+    subject: `Verzes contact form submission by ${customerName}`,
     htmlContent: `<html>
       <head></head>
       <body>
