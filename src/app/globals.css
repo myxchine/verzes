@@ -76,9 +76,9 @@ button {
   background: linear-gradient(
     to right,
     #ffffff 0%,
-    #ffffff00 10%,
-    #ffffff00 40%,
-    #ffffff 50%
+    #ffffff00 20%,
+    #ffffff00 80%,
+    #ffffff 100%
   );
 }
 
